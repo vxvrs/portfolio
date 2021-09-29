@@ -4,12 +4,14 @@
   import Home from "./components/Home.svelte";
   import Contact from "./components/Contact.svelte";
   import Privacy from "./components/Privacy.svelte";
+  import Scene from "./components/Scene.svelte";
 
   let page;
 
   router("/", () => (page = Home));
   router("/contact", () => (page = Contact));
   router("/privacy", () => (page = Privacy));
+  router("/threejs", () => (page = Scene));
 
   router.start();
 
@@ -20,6 +22,9 @@
       break;
     case Privacy:
       pageTitle = "Privacy policy";
+      break;
+    case Scene:
+      pageTitle = "Three.js";
       break;
 
     default:
@@ -32,6 +37,7 @@
   <h1 class="title">{pageTitle} by Viggo Overes</h1>
   <nav>
     <a class="link" href="/" on:click={() => (pageTitle = "Website")}>home</a>
+    <a class="link" href="/threejs" on:click={() => (pageTitle = "Three.js")}>threejs</a>
     <a class="link" href="/contact" on:click={() => (pageTitle = "Contact")}>contact</a>
     <a class="link" href="/privacy" on:click={() => (pageTitle = "Privacy Policy")}>privacy policy</a>
   </nav>
