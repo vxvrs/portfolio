@@ -22,7 +22,7 @@ function animate() {
     object.rotation.y += 0.01;
     object.rotation.z += 0.01;
 
-    controls.update();
+    // controls.update();
 
     renderer.render(scene, camera);
 }
