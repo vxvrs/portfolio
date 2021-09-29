@@ -1,0 +1,55 @@
+.head {
+    font-family: Helvetica;
+    font-weight: bold;
+    color: black;
+    width: 60%;
+    text-align: center;
+    margin-top: 5%;
+    padding: 1%;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.body {
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+
+    font-family: Helvetica;
+    color: black;
+}
+
+.title {
+    border-style: solid;
+    border-width: 4px;
+    padding: 2%;
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+    width: 60%;
+}
+
+.link {
+    font-family: Helvetica;
+    font-weight: bold;
+    margin: 0% 1%;
+    color: black;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: crimson;
+    text-decoration: underline;
+    transition: 0.45s;
+}
+
+.coinmarketcap-currency-widget {
+    width: 40%;
+}
+
+#robot {
+    height: auto;
+    max-width: 100%;
+}
