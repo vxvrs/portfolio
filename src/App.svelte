@@ -11,6 +11,7 @@
   router("/", () => (page = Home));
   router("/contact", () => (page = Contact));
   router("/privacy", () => (page = Privacy));
+  router("/privacy.html", () => (page = Privacy));
   router("/threejs", () => (page = Scene));
 
   router.start();
