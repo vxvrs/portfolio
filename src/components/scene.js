@@ -31,7 +31,7 @@ function resize() {
 }
 
 export function createScene(scene) {
-    renderer = new THREE.WebGLRenderer({ antialias: true, canvas: scene });
+    renderer = new THREE.WebGLRenderer({ canvas: scene });
     resize();
     animate();
 }
